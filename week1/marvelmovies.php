@@ -32,9 +32,9 @@
     }
 
     echo "</p>";
-    $sql_query = "SELECT * FROM marvelmovies where yearReleased < 2010";
+    $sql_query = "SELECT * FROM marvelmovies where title like 'X-Men';
     $result = $db->query($sql_query);
-    echo "<p><strong>Before 2010: </strong>";
+    echo "<p><strong>X-Men Movies: </strong>";
     while($row = $result->fetch_array()){
         // print out fields from row of data
         echo $row['title'] . " | ";

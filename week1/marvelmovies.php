@@ -3,7 +3,6 @@
 <head>
 </head>
 <body>
-<p>
     <?php
     $db = new mysqli(
         "eu-cdbr-azure-north-e.cloudapp.net",
@@ -30,6 +29,5 @@
     //close connection to database
     $db>close();
     ?>
-</p>
 </body>
 </html>

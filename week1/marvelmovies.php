@@ -19,15 +19,15 @@
     $sql_query = "SELECT * FROM marvelmovies";
 
     $result=mysqli_query($db,$sql);
-    while($row = $result>fetch_array())
+    while($row = $result->fetch_array())
     {
         $movieTitle = $row["title"];
-        echo"<p>". $movieTitle."</p>";
+        echo  "<p>". $movieTitle."</p>";
     }
 
-    $result>close();
+    $result->close();
     //close connection to database
-    $db>close();
+    $db->close();
     ?>
 </body>
 </html>

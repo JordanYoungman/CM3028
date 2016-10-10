@@ -16,7 +16,7 @@
     }
 
     // create a SQL query as a string
-    $sql_query = "SELECT * FROM marvelmovies";
+    $sql = "SELECT * FROM marvelmovies";
 
     $result=mysqli_query($db,$sql);
     while($row = $result->fetch_array())

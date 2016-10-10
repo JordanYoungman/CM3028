@@ -32,7 +32,7 @@
     }
 
     echo "</p>";
-    $sql_query = "SELECT * FROM marvelmovies where title like 'X-Men';
+    $sql_query = "SELECT * FROM marvelmovies where title like 'X-Men'";
     $result = $db->query($sql_query);
     echo "<p><strong>X-Men Movies: </strong>";
     while($row = $result->fetch_array()){

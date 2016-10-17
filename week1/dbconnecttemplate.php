@@ -1,10 +1,10 @@
 <?php
 
 $db = new mysqli(
-    "eu-cdbr-azure-north-e.cloudapp.net",
-    "b8e2bb8a8314c4",
-    "b422cf68",
-    "cm3020database"
+    $hostname = "eu-cdbr-azure-north-e.cloudapp.net",
+    $username = "b8e2bb8a8314c4",
+    $password = "b422cf68",
+    $database = "cm3020database"
 );  //connects to database on azure
 
 

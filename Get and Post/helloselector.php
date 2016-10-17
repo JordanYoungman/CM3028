@@ -5,11 +5,8 @@
     </title>
 </head>
 <body>
-<p>This is a very simple HTML document</p>
-<p>It only has two paragraphs</p>
+<p><a href = "http://cm3028-jwy.azurewebsites.net/Get%20and%20Post/helloresult.php?world=Earth">Earth</a></p>
+<p><a href = "http://cm3028-jwy.azurewebsites.net/Get%20and%20Post/helloresult.php?world=Mars">Mars</a></p>
+<p><a href = "http://cm3028-jwy.azurewebsites.net/Get%20and%20Post/helloresult.php?world=Uranus">Uranus</a></p>
 </body>
 </html>
-<?
-$world = $_GET["world"];
-echo "<p>Hello{$world}</p>"
-?>

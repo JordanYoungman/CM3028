@@ -15,12 +15,12 @@
     <li><a href = "displaySuperheros.php">Display all superheros></a></li>
     <li><a href = "battle.php">Insert a battle></a></li>
     <li><a href = "displayBattles.php">Display all battles></a></li>
-<ul>
+    <ul>
     <?
     include ("db_connect.php");
     $sql_query = "SELECT * FROM superheros";
-    $result = $db-?query($sql_query);
-    while($row = $result-.fetch_array())
+    $result = $db->query($sql_query);
+    while($row = $result->fetch_array())
     {
         $firstname = $row['firstName'];
         $lastname = $row['lastName'];
@@ -28,13 +28,7 @@
         echo "<li><a href ='displayBattles.php?id={$id}'>Battles for{$firstname}{$lastname}</a></li>";
     }
     ?>
+    </ul>
+</ul>
 </body>
 </html>
-
-<?php
-/**
- * Created by PhpStorm.
- * User: 1607731
- * Date: 17/10/2016
- * Time: 15:54
- */

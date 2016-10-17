@@ -14,11 +14,19 @@
     <li><a href = "insertSuperhero.php">Insert a superhero></a></li>
     <li><a href = "displaySuperheros.php">Display all superheros></a></li>
     <li><a href = "battle.php">Insert a battle></a></li>
-    <li><a href = "displayBattles.php.php">Display all battles></a></li>
+    <li><a href = "displayBattles.php">Display all battles></a></li>
 <ul>
     <?
     include ("db_connect.php");
-    $sql_query = "SELECT * FROm "
+    $sql_query = "SELECT * FROM superheros";
+    $result = $db-?query($sql_query);
+    while($row = $result-.fetch_array())
+    {
+        $firstname = $row['firstName'];
+        $lastname = $row['lastName'];
+        $id = $row['superheroID'];
+        echo "<li><a href ='displayBattles.php?id={$id}'>Battles for{$firstname}{$lastname}</a></li>";
+    }
     ?>
 </body>
 </html>

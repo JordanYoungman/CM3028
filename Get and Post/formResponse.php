@@ -5,5 +5,5 @@ error_reporting(E_ALL);
 
 $forename = $_POST["forename"];
 $surname = $_POST["surname"];
-echo "<p>{$forename}{$surname}</p>"
+echo "<p>Hello{$forename}{$surname}</p>"
 ?>

@@ -1,4 +1,4 @@
-<form action="printPOST.php" method="post"><br>
+<form action="addblogpost.php" method="post"><br>
     <label>Title</label><input type="text" name="title"><br>
     <br><input type="radio" name="species" value="cat" checked> Cat<br>
     <br><input type="radio" name="species" value="dog"> Dog<br>

@@ -2,6 +2,8 @@
 
 session_start();
 $accesslevel = $_COOKIE['access_level_cookie'];
+$username = $_POST["username"];
+echo "<p>Hello {$username}</p>";
 
 displayAccessLevelInformation($accesslevel);
 

@@ -8,5 +8,5 @@
 </html>
 <?
 $title = $_POST["title"];
-echo "<title>Hello {$title}</title>"
+echo "<title>Hello {$world}</title>"
 ?>

@@ -1,8 +1,9 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 // execute if requested using HTTP POST Method
-    $forename = $_POST["forename"];
-    $surname = $_POST["surname"];
+    $title = $_POST["title"];
+    $content = $_POST["content"];
+    $category = $_POST["species"];
     print("<h1> $title </h1>");
     echo "<title>{$title}</title>";
     echo "<p>{$content}</p>";

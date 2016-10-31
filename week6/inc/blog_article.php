@@ -1,5 +1,5 @@
 <?php
-include ("scripts/dbconnect.php");
+include("scripts/dbconnect.php");
 include ("scripts/header_l2.php");
 $articleID = $params['blogID'];
 echo "
@@ -23,5 +23,5 @@ while($row = $result->fetch_array())
 echo "
 </main>
 ";
-include ("scripts/footer.php");
+include("scripts/footer.php");
 ?>

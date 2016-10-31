@@ -1,7 +1,17 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 1607731
- * Date: 17/10/2016
- * Time: 15:56
- */
+
+include ("db_connect.php");
+
+$firstname = $_POST["firstname"];
+$lastname = $_POST["lastname"];
+$superpower = $_POST["superpower"];
+
+$sql = "INSERT INTO superheros (firstName, lastName,mainSuperpower) VALUES ('$firstname','$lastname','$superpower')";
+
+if (mysqli_query($db, $sql)) {
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($db);
+}
+
+header("location:index.php");
+?>

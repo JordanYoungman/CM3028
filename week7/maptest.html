@@ -45,7 +45,7 @@
                     var address = markers[i].getAttribute("address");
                     var lat = markers[i].getAttribute("lat");
                     var lng = markers[i].getAttribute("lng");
-                    var html = "<b>" + name + "</b> <br/>" + type + "</b> <br/>" + address + "</b> <br/>" + "latitude" + lat + "</b> <br/>" + lng;
+                    var html = "<b>" + name + "</b> <br/>" + type + "</b> <br/>" + address + "</b> <br/>" + "Latitude: " + lat + "</b> <br/>" + "Longitude: " + lng;
                     var icon = customIcons[type] || {};
                     var marker = new google.maps.Marker({
                         map: map,

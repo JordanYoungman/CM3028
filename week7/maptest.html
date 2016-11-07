@@ -42,7 +42,8 @@
                             parseFloat(markers[i].getAttribute("lng")));
                     var type = markers[i].getAttribute("type");
                     var name = markers[i].getAttribute("name");
-                    var html = "<b>" + name + "</b> <br/>" + type;
+                    var location = markers[i].geolocation("location");
+                    var html = "<b>" + name + "</b> <br/>" + type + "</b> <br/>" + location;
                     var icon = customIcons[type] || {};
                     var marker = new google.maps.Marker({
                         map: map,
